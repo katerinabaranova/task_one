@@ -1,0 +1,174 @@
+@font-face {
+    font-family: YesevaOne;
+    src: url('fonts/yeseva-one/YesevaOne-Regular_v2.otf');
+}
+
+@font-face {
+    font-family: GentiumBookBasic;
+    src: url('fonts/Gentium-Basic/GenBasB.ttf');
+}
+
+@font-face {
+    font-family: GentiumBookBasic;
+    font-weight: bold;
+    src: url('fonts/Gentium-Basic/GenBkBasBI.ttf');
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url('fonts/lato/Lato-Regular.ttf');
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.header__main-container {
+    height: 758px;
+    background-image: url(../pics/spoon.jpeg);
+}
+
+.header__navigation-container {
+    height: 110px;
+    width: 100%;
+}
+
+.header__navigation-logo {
+    font-family: YesevaOne;
+    color: white;
+    font-size: 35px;
+    display: inline-block;
+    width: 480px;
+    float: left;
+}
+
+.header__navigation-logo p {
+    margin-left: 180px;
+    margin-top: 45px;
+}
+
+.header__navigation-menu {
+    width: 1120px;
+    display: inline-block;
+    float: right;
+    height: 110px;
+}
+
+.header__slogan {
+    font-family: YesevaOne;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 235px;
+}
+
+.header__navigation-item {
+    font-family: LatoRegular;
+    font-weight: bold;
+    font-size : 30px;
+    padding-top: 40px;
+}
+
+.header__navigation-item a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.about__container {
+    height: 758px;
+    background-image: url(../pics/section_bg.jpeg);
+}
+.about__container-text {
+    display: inline-block;
+    width:430px;
+    height: 510px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 285px; 
+}
+
+.about__container-text h1 {
+    font-family: YesevaOne;
+    text-align: center;
+    color: #cc9900;
+}
+
+.about__container-text p {
+    font-family: LatoRegular;
+    text-align: center;
+    display: inline-block;
+}
+
+.about__container-photo {
+    background-image: url(../pics/man.png);
+    background-repeat: no-repeat;
+}
+
+.about__container-image {
+    display: inline-block;
+    float: right;
+    background-image: url(../pics/plate.png);
+    width:800px;
+}
+
+.ingredients__container {
+    background-image: url(../pics/bg2.jpg);
+    height: 758px;
+}
+
+.ingredients__container-table {
+    width: 570px;
+    height:557px;
+    background: black;
+    opacity: 0.4;
+    margin-top: 100px;
+}
+
+.ingredients__container-table h2 {
+    font-family: YesevaOne;
+    color: white;
+    text-align: center;
+}
+
+.ingredients__container-table-text {
+    font-family: LatoRegular;
+    color: white;
+    margin: auto;
+}
+.footer-container {
+    width: 1600px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-description {
+    display: inline-block;
+    width:530px;
+}
+
+.footer-location {
+    display: inline-block;
+    width:530px;
+
+}
+
+.footer-schedule {
+    display: inline-block;
+    width:530px;
+}
+
+.header__navigation-item {
+    color: white;
+    display: inline-block;
+}
+
+.image-container_devider {
+    background-image: url(../pics/devider.png);
+    margin: 0 auto;
+    width: 247px;
+    height: 24px;
+}
