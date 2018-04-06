@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles/index.css"
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="home">
             <div class="header__main-container">
                 <div class="header__navigation-container">
                     <div class="header__navigation-logo">
@@ -13,27 +13,44 @@
                     </div>    
                     <nav class="header__navigation-menu">
                         <ul class="header__navigation-list">
-                            <li class="header__navigation-item"><a href="#">About</a></li>
-                            <li class="header__navigation-item"><a href="#">Ingredients</a></li>
-                            <li class="header__navigation-item"><a href="#">Menu</a></li>
-                            <li class="header__navigation-item"><a href="#">Reviews</a></li>
-                            <li class="header__navigation-item"><a href="#">Reservations</a></li>
+                            <li class="header__navigation-item"><a href="#home">Home</a></li>
+                            <li class="header__navigation-item"><a href="#about">About</a></li>
+                            <li class="header__navigation-item"><a href="#ingredients">Igredients</a></li>
+                            <li class="header__navigation-item"><a href="#menu">Menu</a></li>
+                            <li class="header__navigation-item"><a href="#reviews">Reviews</a></li>
+                            <li class="header__navigation-item"><a href="#reservations">Reservations</a></li>
+                            <li class="header__navigation-social">
+                                <div class="image-twitter"></div>
+                                <div class="image-you-tube"></div>
+                                <div class="image-facebook"></div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header__slogan">
-                    <p>the right ingredients <br> the right food</p>
+                    <p>the right ingredients <br/> for the right food</p>
                 </div>
-                <div class="header-bottoms"></div>
+                <div class="image__header-devider"></div>
+                <div class="header-bottoms">
+                    <a href="#reservations">
+                        <button class="button__book-table">BOOK A TABLE</button>
+                    </a>
+                    <a href="#menu">
+                        <button class="button__see-menu">SEE THE MENU</button>
+                    </a>
+                </div>
             </div>
         </header>
 
-        <section class="about__container">
+
+        <section id="about" class="about__container">
             <div class="about__container-text">
-                <h1>Just the right food</h1>
-                <div class="image-container_devider"></div>
-                <p>If you've been to one of our restaurants, you've seen - and <br/> tasted - what keeps our customers coming back 
-                        for more.<bt/> Perfect materials and freshly baked food, delicious Lambda<br/> cakes, muffins, and gourmet coffees make us hard to resist!<br/>
+                <h2>Just the right food</h2>
+                <div class="image_devider-orange"></div>
+                <p>If you've been to one of our restaurants, you've seen - and <br/> 
+                    tasted - what keeps our customers coming back for more.<br/> 
+                    Perfect materials and freshly baked food, delicious Lambda<br/>
+                     cakes, muffins, and gourmet coffees make us hard to resist!<br/>
                         Stop in today and check us out!
                 </p>
                 <div class="about__container-photo"></div>
@@ -41,11 +58,11 @@
             <div class="about__container-image"></div>    
         </section>
 
-        <section class="ingredients__container">
+
+        <section id="ingredients" class="ingredients__container">
             <div class="ingredients__container-table">
                 <h2>Fine ingredients</h2>
-                <div class="image-container_devider">
-                </div>
+                <div class="image-container_devider"></div>
                 <div class="ingredients__container-table-text">
                     <p>If you've been to one of  our restaurants, you've seen - and <br/>
                     tasted - what  keeps our customers coming back for more.<br/>
@@ -53,37 +70,340 @@
                     cakes, muffins, and gourmet coffees make us hard to resist!<br/>
                     Stop in today and check us out!</p>
                 </div>
+                <div class="ingredients__images">
+                    <div class="image-wheats"></div>
+                    <div class="image-kurkuma"></div>
+                    <div class="image-bread"></div>
+                </div>
             </div>
         </section>
         
-        <section class="menu"></section>
-        <section class="reviews"></section>
-        <section class="reservations"></section>
-        <footer>
-            <div class="footer-container">
-                    <div class="footer-description">
-                            <h1>About Us</h1>
-                            <div class="image-container_devider"></div>
-                            <p>
-                            Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of cafe. Lambda the best restourant in town
-                            </p>
-                    </div>
-                    <div class="footer-schedule">
-                            <h1>Opening Hours</h1>
-                            <div class="image-container_devider">
-                                <img src="pics/devider.png">
+
+        <section id="menu" class="menu__container">
+            <div class="menu__container-table">
+                <div class="menu__container-left">
+                        <div class="menu__container-table-category">
+                    
+                                <div class="menu__category-name">
+                                    <p>Appetisers</p>
+                                </div>
+                                <div class="image_devider-orange"></div>
+                               
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Tzatsiki</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$3.99</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Refreshing traditional cucumber and garlic youghurt dip.</p>
+                                    </div>                               
+                                </div>
+                                
+            
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Aubergine Salad</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.50</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>                               
+                                </div>
+            
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Aubergine Salad</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.25</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>                               
+                                </div>
                             </div>
-                            <p><b>Mon-Thu:</b>7:00am-8:00pm</p>
-                            <p><b>Fri-Sun:</b>7:00am-10:00pm</p>
+            
+                            <div class="menu__container-table-category">
+                                    
+                                <div class="menu__category-name">
+                                    <p>Salads</p>
+                                </div>
+                                <div class="image_devider-orange"></div>
+            
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Olive Special</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.99</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Refreshing traditional cucumber and garlic youghurt dip.</p>
+                                    </div>                               
+                                </div>
+                                <div class="special">
+                                        <div class="image-special">
+                                            <p>Special</p>
+                                        </div>
+                                </div>
+                                <div class="menu_container-category-item-special">
+                                    <div class="menu__container-table-dish">
+                                        <p>Greek Salad</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.50</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>                               
+                                </div>
+                
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Gusto Salad</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.25</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>                               
+                                </div>
+                            </div>
+                </div>
+
+                <div class="menu__container-right">
+
+                        <div class="menu__container-table-category">
+                        
+                                <div class="menu__category-name">
+                                    <p>Starters</p>
+                                </div>
+                                <div class="image_devider-orange"></div>
+            
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Haloumi</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$3.99</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Refreshing traditional cucumber and garlic youghurt dip.</p>
+                                    </div>                               
+                                </div>
+                                    
+                                <div class="menu_container-category-item">
+                                    <div class="menu__container-table-dish">
+                                        <p>Spinach Pie</p>
+                                    </div>
+                                    <div class="menu__container-table-price">
+                                        <p>$5.50</p>
+                                    </div> 
+                                    <div class="image-line"></div>
+                                    <div class="menu__container-table-description">
+                                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>                               
+                                </div>
+            
+                            </div>
+            
+                            <div class="menu__container-table-category">
+                                    
+                                    <div class="menu__category-name">
+                                        <p>Main Diches</p>
+                                    </div>
+                                    <div class="image_devider-orange"></div>
+            
+                                    <div class="menu_container-category-item">
+                                        <div class="menu__container-table-dish">
+                                            <p>Cornish Mackerel</p>
+                                        </div>
+                                        <div class="menu__container-table-price">
+                                            <p>$5.99</p>
+                                        </div> 
+                                        <div class="image-line"></div>
+                                        <div class="menu__container-table-description">
+                                            <p>Refreshing traditional cucumber and garlic youghurt dip.</p>
+                                        </div>                               
+                                    </div>
+                                    
+                                    <div class="special">
+                                            <div class="image-special">
+                                                <p>Special</p>
+                                            </div>
+                                    </div>
+                                    <div class="menu_container-category-item-special">
+                                        <div class="menu__container-table-dish">
+                                            <p>Roast Lamb</p>
+                                        </div>
+                                        <div class="menu__container-table-price">
+                                            <p>$5.50</p>
+                                        </div> 
+                                        <div class="image-line"></div>
+                                        <div class="menu__container-table-description">
+                                            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                        </div>                               
+                                    </div>
+            
+                                    <div class="menu_container-category-item">
+                                        <div class="menu__container-table-dish">
+                                            <p>Fried chicken</p>
+                                        </div>
+                                        <div class="menu__container-table-price">
+                                            <p>$5.25</p>
+                                        </div> 
+                                        <div class="image-line"></div>
+                                        <div class="menu__container-table-description">
+                                            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                        </div>                               
+                                    </div>
+            
+                                    <div class="menu_container-category-item">
+                                        <div class="menu__container-table-dish">
+                                            <p>Pastitsio</p>
+                                        </div>
+                                        <div class="menu__container-table-price">
+                                            <p>$5.99</p>
+                                        </div> 
+                                        <div class="image-line"></div>
+                                        <div class="menu__container-table-description">
+                                            <p>Refreshing traditional cucumber and garlic youghurt dip.</p>
+                                        </div>                               
+                                    </div>
+                                </div>    
+
+                </div>
+              
+
+                </div>
+        </section>
+
+
+        <section id="reviews" class="reviews__container">
+            <div class="reviews__container-table">
+                <h2>Guest Reviews</h2>
+                <div class="image-container_devider"></div>
+                <div class="reviews__container-text">
+                    <p>If you've been to one of  our restaurants, you've seen - <br/>
+                        and tasted - what  keeps our customers coming back for <br/> 
+                        more. Perfect materials and freshly baked food, <br/> 
+                        delicious Lambda cakes, muffins, and gourmet coffees <br/>
+                        make us hard to resist! Stop in today and check us out!</p>
+                </div>
+                <div class="reviews__container-author">
+                    <p>- food inc, New York</p>    
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reservations" class="reservations__container">
+            <div class="reservations__container-table">
+                <div class="reservations__container-images">
+                    <div class="image-main-course"></div>
+                    <div class="image-dessert"></div>
+                </div>
+                <div class="reservations__container-form">
+                    <div class="reservations__container-form-header">
+                            <p>Just the right food</p>
                     </div>
-                    <div class="footer-location">
-                            <h1>Our Location</h1>
-                            <div class="image-container_devider">
-                                <img src="pics/devider.png">
-                            </div>              
-                           <p><b>19th Paradise Street Sitia</b></p>
-                            <p><b>128 Meserole Avenue</b></p>
+                    <div class="image_devider-orange"></div>
+                    <div class="reservations__container-form-text">
+                        <p>If you've been to one of  our restaurants, you've seen - 
+                            and <br/> tasted - what  keeps our customers coming back for  
+                            more.<br/> Perfect materials and freshly baked food.</p>
+                        <p>Delicious Lambda cakes, muffins, and gourmet coffees 
+                            make <br/> us hard to resist! Stop in today and check us out! Perfect <br/> materials and freshly baked food.</p>
                     </div>
+                    <div class="reservations__container-inputs">
+                        <div class="reservations__container-inputs-item">
+                            <p>Name</p>
+                            <input type="text"  placeholder="    your name *">                            
+                        </div>
+                        <div class="reservations__container-inputs-item">
+                                <p>Email</p>
+                            <input type="text" placeholder="    your email *">                            
+                        </div>
+                        <div class="reservations__container-inputs-item">
+                            <p>Date</p>
+                            <input type="text" placeholder="    date *">                            
+                        </div>
+                        <div class="reservations__container-inputs-item">
+                            <p>Party number</p>
+                            <input type="text" placeholder="    party number *">                            
+                        </div>
+                    </div>
+                    <div class="reservations__button-container">
+                        <button class="reservation__button">Book now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer__container">
+                <div class="footer__contacts">
+                        <div class="footer__item">
+                            <div class="footer__item-header">
+                                    <p>About Us</p>
+                            </div>    
+                            <div class="image_devider-small"></div>
+                            <div class="footer__item-text">
+                                <p>
+                                        Lambda's new and expanded Chelsea location </br>
+                                        represents a truly authentic <b>Greek</b> patisserie, </br>
+                                        featuring breakfasts of fresh croissants and </br>
+                                        steaming bowls of cafe.</br> Lambda the best restourant in town
+                                </p>
+                            </div>    
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-header">
+                                <p>Opening Hours</p>
+                            </div>  
+                            <div class="image_devider-small">
+                            </div>
+                            <div class="footer__item-text-time">
+                                <p><b>Mon-Thu:</b> 7:00am-8:00pm</p>
+                                <p><b>Fri-Sun:</b> 7:00am-10:00pm</p>
+                            </div>    
+                            <div class="footer__payment-images">
+                                <div class="image-white-amex"></div>
+                                <div class="image-white-paypal"></div>
+                                <div class="image-white-visa"></div>
+                                <div class="image-white-discover"></div>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-header">
+                                <p>Our Location</p>
+                            </div>   
+                            <div class="image_devider-small"></div>
+                            <div class="footer__item-text-time">                
+                               <p><b>19th Paradise Street Sitia</b></p>
+                               <p><b>128 Meserole Avenue</b></p>
+                            </div>
+                            <div class="footer__social-images">
+                                <div class="image-white-facebook"></div>
+                                <div class="image-white-youtube"></div>
+                                <div class="image-white-twitter"></div>
+                                <div class="image-white-hz"></div>
+                            </div>    
+                        </div>
+                </div>
             </div>
         </footer>
     </div>

@@ -4,19 +4,28 @@
 }
 
 @font-face {
-    font-family: GentiumBookBasic;
+    font-family: GentiumBasic;
     src: url('fonts/Gentium-Basic/GenBasB.ttf');
-}
-
-@font-face {
-    font-family: GentiumBookBasic;
-    font-weight: bold;
-    src: url('fonts/Gentium-Basic/GenBkBasBI.ttf');
 }
 
 @font-face {
     font-family: LatoRegular;
     src: url('fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: GentiumBookBasic;
+    src: url('fonts/Gentium-Basic/GenBkBasB.ttf');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSansItalic;
+    src: url('fonts/open-sans/OpenSans-Italic.ttf');
 }
 
 .container {
@@ -25,7 +34,7 @@
 }
 
 .header__main-container {
-    height: 758px;
+    height: 750px;
     background-image: url(../pics/spoon.jpeg);
 }
 
@@ -45,30 +54,40 @@
 
 .header__navigation-logo p {
     margin-left: 180px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 .header__navigation-menu {
-    width: 1120px;
+    width: 1000px;
     display: inline-block;
-    float: right;
+    float: left;
     height: 110px;
+    margin-top: 30px;
+    margin-left: 55px;
 }
 
 .header__slogan {
     font-family: YesevaOne;
     color: white;
-    width: 100%;
+    width: 70%;
+    font-size: 90px;
+    margin-top: 111px;
+    margin-left: 253px;
     text-align: center;
-    font-size: 70px;
-    padding-top: 235px;
+    margin: 105px 0px 0px 253px;
+    line-height: 117px;
 }
 
 .header__navigation-item {
-    font-family: LatoRegular;
-    font-weight: bold;
-    font-size : 30px;
-    padding-top: 40px;
+    font-family: GentiumBookBasic;
+    font-size : 20px;
+    margin-right: 50px;
+}
+
+.header__navigation-social {
+    display: inline;
+    font-size : 20px;
+    margin-left: -30px;
 }
 
 .header__navigation-item a {
@@ -76,89 +95,382 @@
     color: white;
 }
 
+.header-bottoms {
+    text-align: center; 
+    margin-top: 100px;
+}
+
 
 .about__container {
-    height: 758px;
+    height: 710px;
     background-image: url(../pics/section_bg.jpeg);
 }
+
 .about__container-text {
     display: inline-block;
     width:430px;
     height: 510px;
     float: left;
-    margin-top: 100px;
-    margin-left: 285px; 
+    margin-top: 71px;
+    margin-left: 280px; 
 }
 
-.about__container-text h1 {
+.about__container-text h2 {
     font-family: YesevaOne;
     text-align: center;
     color: #cc9900;
+    font-size: 35px;
+    margin-bottom: 17px;
 }
 
 .about__container-text p {
     font-family: LatoRegular;
     text-align: center;
     display: inline-block;
+    margin-top: 25px;
+    color: rgb(61, 60, 60);
+    line-height: 24px;
+    margin-left: 17px;
 }
 
 .about__container-photo {
     background-image: url(../pics/man.png);
     background-repeat: no-repeat;
+    margin-left: 145px;
+    height: 219px;
+    width: 221px;
+    margin-top: 33px;
 }
 
 .about__container-image {
     display: inline-block;
-    float: right;
+    float: left;
     background-image: url(../pics/plate.png);
-    width:800px;
+    width:621px;
+    height: 621px;
+    margin-top: 55px;
+    margin-left: 30px;
 }
 
 .ingredients__container {
     background-image: url(../pics/bg2.jpg);
     height: 758px;
+    position: relative;
 }
 
 .ingredients__container-table {
     width: 570px;
     height:557px;
-    background: black;
-    opacity: 0.4;
-    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 215px;
+    top:100px;
 }
 
 .ingredients__container-table h2 {
     font-family: YesevaOne;
     color: white;
+    font-size: 36px;
     text-align: center;
+    margin-top: 76px;
+    margin-bottom: 15px; 
 }
 
 .ingredients__container-table-text {
     font-family: LatoRegular;
     color: white;
-    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 24px;
 }
-.footer-container {
-    width: 1600px;
-    background-color: black;
+
+.ingredients__images {
+    margin-left: 95px;
+    margin-top: 70px;
+}
+
+
+.menu__container {
+    background-image: url(../pics/section_bg-2.jpeg);
+    height: 995px;
+    position: relative;
+}
+
+.menu__container-table {
+    width: 1200px;
+    margin: 64px auto;
+    position: absolute;
+    left: 284px;
+}
+
+.menu__container-table-category {
+    width: 430px;
+    margin-bottom: 69px;
+}
+
+.menu_container-category-item {
+    width: 432px;
+    height: 80px;
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+
+.menu_container-category-item-special {
+    margin-top: 15px;
+    width: 455px;
+    height: 80px;
+    border: 1px solid;
+    border-color: #cc9900;
+}
+
+.menu__category-name p{
+    font-family: YesevaOne;
+    color: #cc9900;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.menu__container-table-dish {
+    display: inline-block;
+    width: 200px;
+}
+
+.menu__container-table-dish p {
+    font-family: YesevaOne;
+    color: #cc9900;
+    font-size: 21px;
+    text-align: left;
+}
+
+.menu__container-table-price {
+    display: inline-block;
+    width: 55px;
+    float: right;
+}
+
+.menu__container-table-price p {
+    font-family: YesevaOne;
+    color: #cc9900;
+    font-size: 21px;
+}
+
+.menu__container-table-description {
+ font-family: LatoRegular;
+ font-size: 15px;
+}
+
+.menu__container-table-description p {
+    margin-top: 11px;
+}
+
+.menu__container-right {
+    width: 450px;
+    display: inline-block;
+}
+
+.menu__container-left {
+    width: 450px;
+    display: inline-block;    
+    margin-right: 147px;
+}
+
+.reviews__container {
+    background-image: url(../pics/meat.png);
+    height: 755px;
+    position: relative;
+}
+
+.reviews__container-table {
+    background: black;
+    height: 555px;
+    width: 765px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 420px;
+    top:100px;
     color: white;
     text-align: center;
 }
 
-.footer-description {
-    display: inline-block;
-    width:530px;
+.reviews__container-table h2 {
+    font-family: YesevaOne;
+    font-size: 36px;
+    margin-top: 76px;
+    margin-bottom: 15px;
 }
 
-.footer-location {
-    display: inline-block;
-    width:530px;
+.reviews__container-text p {
+    font-family: GentiumBasic;
+    font-size: 25px;
+    line-height: 43px;
 
 }
 
-.footer-schedule {
+.reviews__container-author {
+    font-family: LatoRegular;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.reservations__container {
+    height: 710px;
+    background-image: url(../pics/section_bg.jpeg);
+    position: relative;
+}
+
+.reservations__container-table {
+    width: 1200px;
+    height: 510px;
+    top: 100px;
+    left: 215px;
+    position: absolute;
+}
+
+.reservations__container-images {
+    width: 600px;
     display: inline-block;
-    width:530px;
+}
+
+.reservations__container-form {
+    width: 570px;
+    height: 510px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.reservations__container-form-header p {
+    font-family: YesevaOne;
+    color: #cc9900;
+    font-size: 35px;
+    text-align: center;
+    margin: -3px 0px 15px -5px;
+    letter-spacing: 0px;
+}
+
+.reservations__container-form-text p{
+    font-family: LatoRegular;
+    text-align: center;
+    display: inline-block;
+    color: rgb(61, 60, 60);
+    margin-bottom: 0px;
+    line-height: 23px;
+    margin-top: 14px;
+}
+
+.reservations__container-form-text {
+    text-align: center;
+    margin-top: 12px;
+    line-height: 22px;
+}
+
+.reservations__container-inputs {
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 600px;
+}
+
+.reservations__container-inputs-item {
+    font-family: OpenSans;
+    color: #cc9900;
+    width: 200px;
+    display: inline-block;
+    margin-right:26px; 
+    margin-bottom: 9px;
+}
+
+.reservations__container-inputs-item p{
+    margin-bottom: 0px;
+}
+.reservations__button-container{
+    width:600px;
+    height: 35px;
+    margin-top: 24px;
+    margin-left: 182px;
+}
+
+.reservation__button {
+    color: white;
+    background-color:  #cc9900;
+    height: 35px;
+    width: 200px;
+    font-family: LatoRegular;
+    font-size: 17px;
+    border: none;
+}
+
+.reservation__button:hover {
+    cursor: pointer;
+}
+
+input[type=text] {
+    height: 32px;
+    width: 198px;
+    background: rgba(256, 256, 256, 0.6);
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    font-family: OpenSansItalic;
+    font-size: 15px;
+}
+
+input:hover,click {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cc9900;;
+}
+
+.footer__container {
+    width: 1600px;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    height: 320px;
+}
+
+.footer__item {
+    display: inline-block;
+    width:360px;
+    margin-top: 35px;
+    vertical-align: top;
+    margin-right: 50px;
+    height: 250px;
+}
+
+.footer__item-header p {
+    font-family: YesevaOne;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer__item-text p {
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.footer__item-text-time p {
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+.footer__contacts {
+    width: 1400px;
+    margin-left: 225px;
+}
+
+.footer__payment-images {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.footer__social-images {
+    margin-top: 55px;
+    text-align: center;
 }
 
 .header__navigation-item {
@@ -171,4 +483,224 @@
     margin: 0 auto;
     width: 247px;
     height: 24px;
+}
+
+.image__header-devider {
+    background-image: url(../pics/top-divider.png);
+    margin: -65px auto;
+    width: 232px;
+    height: 43px;
+}
+
+.image-twitter {
+    background: url(../pics/social_twitter.png);
+    height: 16px;
+    width: 19px;
+    display: inline-block;
+}
+
+.image-facebook {
+    background: url(../pics/social_facebook.png);
+    height: 20px;
+    width: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.image-you-tube {
+    background: url(../pics/social_youtube.png);
+    height: 21px;
+    width: 18px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.image_devider-orange {
+    background-image: url(../pics/divider_orange.png);
+    margin: 0 auto;
+    width: 247px;
+    height: 24px;
+}
+
+.image_devider-small {
+    background-image: url(../pics/rsz_1devider.png);
+    width: 185px;
+    height: 18px;
+    margin: 0px auto 20px;
+}
+
+.image-wheats {
+    background-image: url(../pics/ingridient-1.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+.image-kurkuma {
+    background-image: url(../pics/ingridient-2.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.image-bread {
+    background-image: url(../pics/ingridient-3.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey;
+    display: inline-block;
+    margin-right: 15px;
+
+
+}
+
+.image-main-course {
+    background: url(../pics/main-course.jpg);
+    height: 507px;
+    width: 270px;
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.image-dessert {
+    background: url(../pics/dessert.jpg);
+    height: 507px;
+    width: 270px;
+    display: inline-block;
+}
+
+.image-line {
+    background: url(../pics/special_bg.png);
+    height: 1px;
+    width: 430px;
+    margin-top: -13px;
+}
+
+.image-special {
+    background: url(../pics/special_bg.png);
+    height: 20px;
+    width: 70px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-family: LatoRegular;
+}
+
+.image-white-amex {
+    background: url(../pics/payment/amex.png);
+    width: 22px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-white-discover {
+    background: url(../pics/payment/discover.png);
+    width: 22px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-white-paypal {
+    background: url(../pics/payment/paypal.png);
+    width: 22px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-white-visa {
+    background: url(../pics/payment/visa.png);
+    width: 21px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-white-facebook {
+    background: url(../pics/social/facebook_white.png);
+    width: 9px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-white-youtube {
+    background: url(../pics/social/youtube_white.png);
+    width: 15px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.image-white-twitter {
+    background: url(../pics/social/twitter_white.png);
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.image-white-hz {
+    background: url(../pics/social/hz_white.png);
+    width: 14px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.button__book-table {
+    width: 228px;
+    height: 55px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 17px;
+}
+
+.button__book-table:hover {
+    cursor: pointer;
+}
+
+
+.button__see-menu {
+    width: 228px;
+    height: 55px;
+    color: white;
+    background: rgba(256, 256, 256, 0.6);
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 26px;
+    font-size: 17px;
+}
+
+.button__see-menu:hover {
+    cursor: pointer;
+}
+
+.special {
+    width:450px;
+    margin-bottom: -15px;
+    margin-left: 387px;
 }
